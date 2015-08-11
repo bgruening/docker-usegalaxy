@@ -286,3 +286,15 @@ RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name realigner_target_creator --panel-section-name 'NGS:_GATK_Tools_(beta)'" \
     "--url https://toolshed.g2.bx.psu.edu -o guru-ananda --name karyotype_plot --panel-section-name 'Regional_Variation'"
 
+
+
+# Mark folders as imported from the host.
+VOLUME ["/export/", "/data/", "/var/lib/docker"]
+
+# Expose port 80 (webserver), 21 (FTP server), 8800 (Proxy)
+EXPOSE :80
+EXPOSE :21
+EXPOSE :8800
+
+# Autostart script that is invoked during container start
+CMD ["/usr/bin/startup"]
