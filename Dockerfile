@@ -151,7 +151,7 @@ RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name divide_pg_snp --panel-section-name 'Phenotype_Association'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name vcfcheck --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastx_renamer --panel-section-name 'NGS:_QC_and_manipulation'" \
-    "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastq_to_fasta --panel-section-name 'Convert_Formats'" \
+    #"--url https://toolshed.g2.bx.psu.edu -o devteam --name fastq_to_fasta --panel-section-name 'Convert_Formats'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name samtools_slice_bam --panel-section-name 'NGS:_SAMtools'"
 
 RUN install-repository \
