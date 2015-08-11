@@ -269,9 +269,7 @@ RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name samtools_rmdup --panel-section-name 'NGS:_SAMtools'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name logistic_regression_vif --panel-section-name 'Regional_Variation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name samtools_split --panel-section-name 'NGS:_SAMtools'" \
-    "--url https://toolshed.g2.bx.psu.edu -o devteam --name vcffixup --panel-section-name 'NGS:_VCF_Manipulation'" \
-    "--url https://toolshed.g2.bx.psu.edu -o devteam --name tabular_to_fasta --panel-section-name 'Convert_Formats'"
-
+    "--url https://toolshed.g2.bx.psu.edu -o devteam --name vcffixup --panel-section-name 'NGS:_VCF_Manipulation'"
 RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name megablast_xml_parser --panel-section-name 'NGS:_Mapping'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name find_diag_hits --panel-section-name 'Metagenomic_analyses'" \
