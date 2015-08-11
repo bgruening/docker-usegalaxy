@@ -151,7 +151,7 @@ RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name divide_pg_snp --panel-section-name 'Phenotype_Association'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name vcfcheck --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastx_renamer --panel-section-name 'NGS:_QC_and_manipulation'" \
-    #"--url https://toolshed.g2.bx.psu.edu -o devteam --name fastq_to_fasta --panel-section-name 'Convert_Formats'" \
+    "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastq_to_fasta --panel-section-name 'Convert_Formats'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name samtools_slice_bam --panel-section-name 'NGS:_SAMtools'"
 
 RUN install-repository \
@@ -247,9 +247,7 @@ RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o anton --name vcf2tsv --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name get_flanks --panel-section-name 'Operate_on_Genomic_Intervals'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name kernel_principal_component_analysis --panel-section-name 'Regional_Variation'" \
-    "--url https://toolshed.g2.bx.psu.edu -o devteam --name basecoverage --panel-section-name 'Operate_on_Genomic_Intervals'" \
-    "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastq_to_fasta --panel-section-name 'NGS:_QC_and_manipulation'"
-
+    "--url https://toolshed.g2.bx.psu.edu -o devteam --name basecoverage --panel-section-name 'Operate_on_Genomic_Intervals'"
 RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name cuffquant --panel-section-name 'NGS:_RNA-seq'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name variant_filtration --panel-section-name 'NGS:_GATK_Tools_(beta)'" \
