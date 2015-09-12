@@ -14,7 +14,6 @@ RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name subtract_query --panel-section-name 'Join,_Subtract_and_Group'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name indel_realigner --panel-section-name 'NGS:_GATK_Tools_(beta)'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name table_recalibration --panel-section-name 'NGS:_GATK_Tools_(beta)'" \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcfallelicprimitives --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name picard --panel-section-name 'NGS:_Picard_(beta)'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name filter_transcripts_via_tracking --panel-section-name 'NGS:_RNA-seq'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name varscan_version_2 --panel-section-name 'NGS:_Variant_Analysis'" \
@@ -29,7 +28,6 @@ RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name histogram --panel-section-name 'Graph/Display_Data'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fasta_filter_by_length --panel-section-name 'FASTA_manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name cluster --panel-section-id 'bxops'" \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcffixup --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastq_manipulation --panel-section-id 'NGS_QC'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name cuffcompare --panel-section-name 'NGS:_RNA-seq'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastqtofasta --panel-section-id 'NGS_QC'"
@@ -51,8 +49,6 @@ RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name complement --panel-section-id 'bxops'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name variant_annotator --panel-section-name 'NGS:_GATK_Tools_(beta)'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name samtools_bedcov --panel-section-name 'NGS:_SAMtools'" \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcfprimers --panel-section-name 'NGS:_VCF_Manipulation'" \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcfsort --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name vcfannotategenotypes --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o gregory-minevich --name bcftools_view --panel-section-name 'NGS:_SAMtools'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name lastz --panel-section-name 'NGS:_Mapping'" \
@@ -60,7 +56,6 @@ RUN install-repository \
 
 RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o guru-ananda --name heatmap --panel-section-name 'Regional_Variation'" \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcfdistance --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o boris --name phylorelatives --panel-section-name 'NGS:_Variant_Analysis'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name tabular_to_fastq --panel-section-id 'NGS_QC'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name linear_regression --panel-section-name 'Regional_Variation'" \
@@ -79,8 +74,7 @@ RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name ctd_batch --panel-section-name 'Phenotype_Association'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fasta_compute_length --panel-section-name 'FASTA_manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastq_filter --panel-section-id 'NGS_QC'" \
-    "--url https://toolshed.g2.bx.psu.edu -o devteam --name cuffdiff --panel-section-name 'NGS:_RNA-seq'" \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcfrandomsample --panel-section-name 'NGS:_VCF_Manipulation'"
+    "--url https://toolshed.g2.bx.psu.edu -o devteam --name cuffdiff --panel-section-name 'NGS:_RNA-seq'"
 
 RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastqc --panel-section-id 'NGS_QC'" \
@@ -95,7 +89,6 @@ RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o pcingola --name snpeff --panel-section-name 'snpEff'"
 
 RUN install-repository \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcfgeno2haplo --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name getindelrates_3way --panel-section-name 'Regional_Variation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name emboss_5 --panel-section-name 'EMBOSS'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name depth_of_coverage --panel-section-name 'NGS:_GATK_Tools_(beta)'" \
@@ -113,7 +106,6 @@ RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name featurecounter --panel-section-name 'Regional_Variation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name bamtools_split --panel-section-name 'NGS:_BAM_Tools'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastq_groomer --panel-section-id 'NGS_QC'" \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcfannotategenotypes --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name samtools_mpileup --panel-section-name 'NGS:_SAMtools'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastx_clipper --panel-section-id 'NGS_QC'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name tabular_to_fasta --panel-section-name 'FASTA_manipulation'"
@@ -122,7 +114,6 @@ RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name scatterplot --panel-section-name 'Graph/Display_Data'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name getindels_2way --panel-section-name 'Regional_Variation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fasta_to_tabular --panel-section-name 'Convert_Formats'" \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcfcommonsamples --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastq_masker_by_quality --panel-section-id 'NGS_QC'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name variant_recalibrator --panel-section-name 'NGS:_GATK_Tools_(beta)'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name maf_cpg_filter --panel-section-name 'Regional_Variation'" \
@@ -133,9 +124,7 @@ RUN install-repository \
 RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o gregory-minevich --name ems_variant_density_mapping --panel-section-name 'NGS:_Variant_Analysis'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name vcfsort --panel-section-name 'NGS:_VCF_Manipulation'" \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcfaddinfo --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastx_barcode_splitter --panel-section-id 'NGS_QC'" \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcfannotate --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name kernel_canonical_correlation_analysis --panel-section-name 'Regional_Variation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastq_trimmer_by_quality --panel-section-id 'NGS_QC'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name gffread --panel-section-name 'NGS:_RNA-seq'" \
@@ -155,7 +144,6 @@ RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name samtools_slice_bam --panel-section-name 'NGS:_SAMtools'"
 
 RUN install-repository \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcfgenotypes --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name quality_filter --panel-section-name 'Regional_Variation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastx_trimmer --panel-section-id 'NGS_QC'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name microsats_alignment_level --panel-section-name 'Regional_Variation'" \
@@ -183,8 +171,6 @@ RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name vcfallelicprimitives --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name lca_wrapper --panel-section-name 'Metagenomic_analyses'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fasta_concatenate_by_species --panel-section-name 'FASTA_manipulation'" \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcfleftalign --panel-section-name 'NGS:_VCF_Manipulation'" \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcffilter --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastq_to_tabular --panel-section-id 'NGS_QC'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name cuffnorm --panel-section-name 'NGS:_RNA-seq'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name vcfaddinfo --panel-section-name 'NGS:_VCF_Manipulation'" \
@@ -192,9 +178,7 @@ RUN install-repository \
 
 RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name count_covariates --panel-section-name 'NGS:_GATK_Tools_(beta)'" \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcfhethom --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name samtools_stats --panel-section-name 'NGS:_SAMtools'" \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcfbedintersect --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name sam2interval --panel-section-name 'NGS:_SAMtools'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name principal_component_analysis --panel-section-name 'Regional_Variation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name pileup_interval --panel-section-name 'NGS:_SAMtools'" \
@@ -210,7 +194,6 @@ RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name sam_to_bam --panel-section-name 'NGS:_SAMtools'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name vcfflatten --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fasta_to_tabular --panel-section-name 'FASTA_manipulation'" \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcfcombine --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name vcfgeno2haplo --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name bam_to_sam --panel-section-name 'NGS:_SAMtools'"
 
@@ -218,7 +201,6 @@ RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fasta_nucleotide_changer --panel-section-name 'FASTA_manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastx_artifacts_filter --panel-section-id 'NGS_QC'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name vcfdistance --panel-section-name 'NGS:_VCF_Manipulation'" \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcfvcfintersect --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name concat --panel-section-id 'bxops'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name short_reads_figure_score --panel-section-id 'NGS_QC'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name snpfreq --panel-section-name 'Phenotype_Association'" \
@@ -230,12 +212,10 @@ RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name substitutions --panel-section-name 'Regional_Variation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastq_trimmer --panel-section-id 'NGS_QC'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name vcfcombine --panel-section-name 'NGS:_VCF_Manipulation'" \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcfcheck --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name megablast_wrapper --panel-section-name 'NGS:_Mapping'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastq_stats --panel-section-id 'NGS_QC'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name bowtie_wrappers --panel-section-name 'NGS:_Mapping'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastx_collapser --panel-section-name 'FASTA_manipulation'" \
-    "--url https://toolshed.g2.bx.psu.edu -o devteam --name sam_pileup --panel-section-name 'NGS:_SAMtools'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name samtools_reheader --panel-section-name 'NGS:_SAMtools'"
 
 RUN install-repository \
@@ -244,7 +224,6 @@ RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name fastq_paired_end_joiner --panel-section-id 'NGS_QC'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name subtract --panel-section-id 'bxops'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name xy_plot --panel-section-name 'Graph/Display_Data'" \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcf2tsv --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name get_flanks --panel-section-id 'bxops'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name kernel_principal_component_analysis --panel-section-name 'Regional_Variation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name basecoverage --panel-section-id 'bxops'"
@@ -275,14 +254,12 @@ RUN install-repository \
 RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name megablast_xml_parser --panel-section-name 'NGS:_Mapping'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name find_diag_hits --panel-section-name 'Metagenomic_analyses'" \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcfselectsamples --panel-section-name 'NGS:_VCF_Manipulation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name lda_analysis --panel-section-name 'Statistics'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name vcftools_slice --panel-section-name 'NGS:_Variant_Analysis'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name macs --panel-section-name 'NGS:_Peak_Calling'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name microsats_mutability --panel-section-name 'Regional_Variation'" \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name vcf2pgsnp --panel-section-name 'Phenotype_Association'" \
-    "--url https://toolshed.g2.bx.psu.edu -o devteam --name vcfrandomsample --panel-section-name 'NGS:_VCF_Manipulation'" \
-    "--url https://toolshed.g2.bx.psu.edu -o anton --name vcfbreakcreatemulti --panel-section-name 'NGS:_VCF_Manipulation'"
+    "--url https://toolshed.g2.bx.psu.edu -o devteam --name vcfrandomsample --panel-section-name 'NGS:_VCF_Manipulation'"
 
 RUN install-repository \
     "--url https://toolshed.g2.bx.psu.edu -o devteam --name realigner_target_creator --panel-section-name 'NGS:_GATK_Tools_(beta)'" \
